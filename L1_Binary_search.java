@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Binary_search {
+public class L1_Binary_search {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 55, 66, 78};
         int target = 4;

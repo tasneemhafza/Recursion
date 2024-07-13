@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Recursion_Basics {
+public class L1_Recursion_Basics {
     public static void main(String[] args) {
         // print1(1);
         print(1);
