@@ -51,6 +51,19 @@ public class L3_Find_Index {
         return findAllIndex2(arr, target, index+1, list);
     }
 
+    static ArrayList<Integer> findAllIndex3(int[] arr, int target, int index){
+        ArrayList<Integer> list = new ArrayList<>();
+        if(index == arr.length){
+            return list;
+        }
+        if(arr[index] == target){
+            list.add(index);
+        }
+        ArrayList<Integer> ansFromBelowCalls = findAllIndex3(arr, target, index+1);
+        list.addAll(ansFromBelowCalls);
+        return list;
+    }
+
 
     public static void main(String[] args) {
         int[] arr= {1,3,3,5,5,7,9};
@@ -64,6 +77,8 @@ public class L3_Find_Index {
         // OR
         ArrayList<Integer> ans= findAllIndex2(arr, 5, 0, new ArrayList<>()); 
         System.out.println(ans);
+
+        System.out.println(findAllIndex3(arr, 3, 0));
     }
 
     
