@@ -2,7 +2,7 @@ package Recursion;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class L5_MergeSort {
     public static void main(String[] args) {
         int[] arr= {5,2,9,6,1,3};
         // arr = mergeSort(arr);

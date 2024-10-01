@@ -1,7 +1,7 @@
 package Recursion;
 import java.util.Arrays;
 
-public class QuickSort {
+public class L6_QuickSort {
     public static void main(String[] args) {
         int[] arr= {3,6,1,8,2};
         sort(arr, 0, arr.length-1);

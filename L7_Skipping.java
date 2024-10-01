@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Skipping {
+public class L7_Skipping {
     public static void main(String[] args) {
         skip1("", "banana");
         System.out.println(skip2("apple"));
